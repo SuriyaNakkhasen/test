@@ -1,0 +1,177 @@
+  .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(255, 255, 255);
+      z-index: -1;
+      /* เอาไว้ด้านหลัง */
+  }
+
+  /* ตั้งค่าพื้นหลัง Header */
+  .hero {
+      width: 100%;
+      height: 30vh;
+      background: url('img/ปกเว็ป.png') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      overflow-x: hidden;
+  }
+
+  /* เมนูนำทาง */
+  .navbar {
+      position: sticky;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.318);
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+      font-size: 24px;
+      margin-left: 50px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+  }
+
+  @media (max-width: 768px) {
+      .nav-links {
+          flex-direction: column;
+          /* ✅ เรียงเมนูแนวตั้งแทนแนวนอน */
+          width: 100%;
+          align-items: flex-start;
+      }
+  }
+
+  .nav-links li {
+      margin: 0 15px;
+  }
+
+  .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .nav-links a:hover {
+      text-decoration: underline;
+      /* โชว์ตอน hover */
+  }
+
+  body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+  }
+
+  section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+  }
+
+  .section {
+      color: #0077cc;
+  }
+
+  .section-index {
+      color: #4e6aff;
+      font-size: 10rcap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 40px;
+  }
+
+  .project {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+  }
+
+  .about-img {
+      width: 300px;
+      height: 500px;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-text {
+      max-width: 500px;
+      font-size: 18px;
+      line-height: 1.6;
+  }
+
+  .media {
+      display: flex;
+      justify-content: center;
+      /* จัดแนวนอน */
+      align-items: flex-start;
+      /* จัดแนวตั้ง */
+      height: 100vh;
+      background-color: #dcdcdc;
+      /* พื้นหลัง (ปรับได้ตามใจ) */
+  }
+
+  .social {
+      display: flex;
+      justify-content: center;
+      /* จัดกลางแนวนอน */
+      align-items: center;
+      /* จัดกลางแนวตั้ง (ถ้าต้องการเต็มจอ) */
+      gap: 20px;
+      /* เว้นระยะระหว่างรูป */
+  }
+
+  .FB-img,
+  .IG-img {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  }
+
+  .FB-img:hover,
+  .IG-img:hover {
+      transform: scale(1.1);
+      /* ขยายเบา ๆ เวลา hover */
+  }
+
+  .performance1 {
+    width: 1000px;        /* ทำให้เต็มความกว้าง */
+    height: auto;       /* ให้ปรับอัตราส่วนอัตโนมัติ */
+    display: flex;
+      justify-content: center;
+      /* จัดแนวนอน */
+      align-items: flex-start;
+      /* จัดแนวตั้ง */
+      margin: 0 auto;
+      gap: 20;
+}
